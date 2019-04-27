@@ -1,47 +1,51 @@
-//*******************************************************************
-// Autorzy: Dorota Matkowska 
-//   		Martyna Klebba
-//			reprezentacja prostokąta 
-//*******************************************************************
+package Exercise_04_04;
 
-import java.lang.Math; 
+import org.w3c.dom.css.Rect;
 
+public class Rectangle extends Shape {
 
-public class Rectangle {
-    private double lengthA;
-    private double widthB;
+    private double width;
+    private double length;
 
-    public Rectangle(double lengthA, double widthB) {
-        this.sideA = lengthA;
-        this.sideB = widthB;
+    public Rectangle(){
+        width = 1.0;
+        length = 1.0;
     }
 
-    public double getlengthA() {
-        return lengthA;
+    public Rectangle(double width, double length){
+        this.width = width;
+        this.length = length;
+
     }
 
-    public double getwidthB() {
-        return witdhB;
+    public Rectangle(double width, double length, String colour, boolean filled){
+
     }
 
-    public double getArea() {
-        return lengthA * widthB;
+    public double getwidth(){
+        return width;
+
     }
 
-    public double getPerimeter() {
-        return 2 * lengthA + 2 * widthB;
+    public void setWidth(){
+        this.width = width;
     }
 
-    public double getDiagonal() {
-        return Math.sqrt(lengthA * lengthA + widthB * widthB);
+    public double getlength(){
+        return length;
     }
+
+    public void setLength(){
+        this.length = length;
+    }
+
+
+    public double getarea() {
+        return width * length;
+    }
+
+    public double getperimeter() {
+        return 2 * (width + length);
+    }
+
 }
- public static void main(String[] args){ 
- 
-  Rectangle zadanie = new Rectangle(5,5);  
- }
-}
-
-
-    
-
