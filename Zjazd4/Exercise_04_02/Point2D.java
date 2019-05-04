@@ -50,4 +50,3 @@ public class Point2D {
     }
 
 }
-© 2019 GitHub, Inc.
