@@ -1,7 +1,7 @@
 /*
     Dorota Matkowska
     Aleksander Tyński
-    Zadanie 1 lab6
+    Zadanie 3 lab6
     Klasa Insurance
      */
 
